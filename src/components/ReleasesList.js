@@ -1,5 +1,5 @@
 import React, {Component} from "react"
-import Release from "./Release"
+import Release from "./Release.js"
 
 class ReleasesList extends Component {
   render(){
@@ -9,8 +9,8 @@ class ReleasesList extends Component {
         <Release
         name={release.name}
         key={release.id}
+        url={release.url}
         >
-        {release.url}
         </Release>
       )
     })

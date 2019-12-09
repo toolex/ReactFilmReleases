@@ -5,9 +5,7 @@ class Release extends Component {
   render(){
     return(
       <li className="Release">
-      <h4>{this.props.children}</h4>
-      <p>{this.props.name}</p>
-      <p>{this.props.url}</p>
+      <a href={this.props.url}>{this.props.name}</a>
       </li>
     )
   }

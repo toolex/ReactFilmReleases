@@ -1,8 +1,10 @@
 import React, {Component} from "react"
-import ReleasesList from "../components/ReleasesList"
+import ReleasesList from "../components/ReleasesList.js"
 
 class ReleasesBox extends Component {
+
   constructor(props){
+    super(props)
     this.state = {
       releases: [
   {
@@ -33,12 +35,12 @@ class ReleasesBox extends Component {
       ]
     }
   }
+
   render(){
     return (
       <div className="ReleasesBox">
       <h2>Releases</h2>
       <ReleasesList releases={this.state.releases}/>
-      <button>More Future Releases</button>
       </div>
     )
   }
