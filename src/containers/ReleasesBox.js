@@ -41,6 +41,7 @@ class ReleasesBox extends Component {
       <div className="ReleasesBox">
       <h2>Releases</h2>
       <ReleasesList releases={this.state.releases}/>
+      <a href="https://www.imdb.com/calendar/?region=gb">More Future Releases</a>
       </div>
     )
   }
